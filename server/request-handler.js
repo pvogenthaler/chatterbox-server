@@ -5,13 +5,7 @@ var headers = {
   'access-control-max-age': 10,
   'Content-Type': 'application/json'
 };
-var messages = [
-  { 
-    username: 'Paige', 
-    message: 'hello world',
-    objectId: 0
-  }
-];
+var messages = [];
 var idCounter = 0;
 
 
