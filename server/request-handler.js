@@ -43,7 +43,7 @@ var requestHandler = function(request, response) {
       request.on('end', function() {
         var statusCode = 201;
         response.writeHead(statusCode, headers);
-        response.end();
+        response.end(null);
       });
     }
 
