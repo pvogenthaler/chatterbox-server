@@ -22,7 +22,7 @@ var requestHandler = function(request, response) {
 
     var statusCode = 200;
     response.writeHead(statusCode, headers);
-    response.end();
+    response.end(null);
 
   } else if (request.url === '/classes/messages/?order=-createdAt' || request.url === '/classes/messages' || request.url === '/classes/messages/') {
 
@@ -51,7 +51,7 @@ var requestHandler = function(request, response) {
 
     var statusCode = 404;
     response.writeHead(statusCode, headers);
-    response.end( { results: [] } );
+    response.end(null);
   }
 
 };
